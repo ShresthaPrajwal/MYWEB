@@ -1,0 +1,225 @@
+<!-- try horizontal mode or open in browser-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        * {
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        html {
+            margin: 0px;
+        }
+        
+        body {
+            margin: 0px;
+            word-wrap: break-word;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            box-shadow: 0px 0px 10px 2px grey;
+            font-family: cursive;
+            font-size: 30px;
+        }
+        
+        .nav {
+            position: sticky;
+            margin: 20px;
+            text-align: center;
+            font-family: "Bangers";
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 10px;
+            justify-content: space-evenly;
+        }
+        
+        .nav>div {
+            background-color: black;
+            font-size: 30px;
+            text-align: center;
+            padding: 10px 60px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        
+        .nav>div>a:hover
+        /*.nav>div:hover*/
+        
+        {
+            background-color: white;
+            color: black;
+        }
+        
+        .sidebar {
+            grid-area: menu;
+            text-align: center;
+        }
+        
+        .feed {
+            grid-area: feed;
+            background-color: black;
+            color: white;
+            box-shadow: 0px 0px 10px grey;
+            font-family: "Cinzel";
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .sidebar2 {
+            grid-area: links;
+            box-shadow: 0px 0px 10px black;
+            padding: 10px;
+            font-family: "Manrope";
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-areas: 'menu menu menu feed feed feed feed feed links links';
+            grid-gap: 20px;
+            margin: 10px;
+        }
+        
+        .grid>.sidebar {
+            font-family: "Cinzel";
+            box-shadow: 0px 0px 10px black;
+            height: auto;
+        }
+        
+        .sidebar img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .feed img {
+            width: 100%;
+            height: auto
+        }
+        
+        footer {
+            background-color: black;
+        }
+        
+        .copyright {
+            width: 100%;
+            background-color: grey;
+            color: white;
+            padding: 10px;
+        }
+        
+        footer li {
+            padding: 10px;
+        }
+        
+        footer a:hover {
+            text-shadow: 0px 0px 10px white;
+        }
+        
+        @media only screen and (max-width:750px) {
+            .nav {
+                grid-template-columns: auto;
+            }
+            .grid {
+                grid-template-areas: 'menu menu menu menu menu menu menu menu menu menu' 'feed feed feed feed feed feed feed links links links';
+            }
+        }
+        
+        @media only screen and (max-width:450px) {
+            .nav {
+                grid-template-columns: auto;
+            }
+            .grid {
+                grid-template-areas: 'menu' 'feed''links';
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        pjkoju
+    </header>
+    <div class="nav">
+        <div><a href="#">Home</a></div>
+        <div><a href="#">Photos</a></div>
+        <div><a href="#">Videos</a></div>
+        <div><a href="#">More</a></div>
+    </div>
+
+    <div class="grid">
+        <div class="sidebar">
+            <div>
+                <img src="https://scontent.fktm8-1.fna.fbcdn.net/v/t1.6435-9/146203115_2842503492671505_7720770978256357924_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=fnFe7FQAAM0AX8Z3ds3&tn=se1T7ERiliJu-sH4&_nc_ht=scontent.fktm8-1.fna&oh=2f0a6eecacf6a39bd05a7ef0421e93f0&oe=61416305">
+                <p>
+                    Hey,my name is Prajwal Shrestha. I was wondering how to use my css/html skill as a beginner so, I decided to create a webpage about myself.Hope you find my small project interesting.
+                </p>
+            </div>
+        </div>
+        <div class="feed">
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Maxime non, at modi esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Maxime non, at modi esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi
+                esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi esse quas saepe,
+                nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi esse quas saepe, nesciunt quae quia
+                aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi esse quas saepe, nesciunt quae quia aliquam exercitationem
+                dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet
+                veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt
+                praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum
+                eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Maxime non, at modi esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Maxime non, at modi esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non,
+                at modi esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi esse quas
+                saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi esse quas saepe, nesciunt quae
+                quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi esse quas saepe, nesciunt quae quia aliquam exercitationem
+                dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet
+                veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt
+                praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum
+                eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?
+            </div>
+            <img src="https://scontent.fktm8-1.fna.fbcdn.net/v/t1.6435-9/69357289_2481248432107374_7110252735722684416_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=19026a&_nc_ohc=VURj4pgoalsAX8WxPR2&_nc_ht=scontent.fktm8-1.fna&oh=e1fb08763a49d608fe5313e3c31d87f8&oe=6144C552"
+            />
+        </div>
+        <div class="sidebar2">
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Maxime non, at modi esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Maxime non, at modi esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi
+                esse quas saepe, nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi esse quas saepe,
+                nesciunt quae quia aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non, at modi esse quas saepe, nesciunt quae quia
+                aliquam exercitationem dolor tenetur eveniet veniam, deserunt praesentium harum eos cupiditate repellat?
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+        <div class="copyright">
+            ©Copyright goes here.
+        </div>
+    </footer>
+</body>
+
+</html>
